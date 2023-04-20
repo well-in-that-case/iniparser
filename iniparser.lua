@@ -1,5 +1,5 @@
 local ini <const> = {
-    version = "0.2.7",
+    version = "0.2.8",
     __debug = false
 }
 
@@ -12,7 +12,7 @@ local type <const>,
       tostring <const>,
       tonumber <const>,
       str_gmatch <const>,
-      default_path = type, io.open, string.sub, string.len, tostring, tonumber, string.gmatch, nil
+      default_path = type, io.open, string.sub, string.len, utostring, utonumber, string.gmatch, nil
 
 if menu then
     default_path = utils.get_appdata_path("PopstarDevs\\2Take1Menu\\scripts", "") .. "\\"
