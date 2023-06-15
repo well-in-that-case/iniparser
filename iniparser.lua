@@ -15,7 +15,7 @@ local type <const>,
       default_path = type, io.open, string.sub, string.len, utostring, utonumber, string.gmatch, nil
 
 if menu then
-    default_path = util.get_appdata_path("PopstarDevs\\2Take1Menu\\scripts", "") .. "\\"
+    default_path = filesystem.scripts_dir() .. '\\store\\'
 else
     default_path = "./"
 end
